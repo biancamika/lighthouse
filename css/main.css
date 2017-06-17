@@ -99,25 +99,42 @@ body {
    background-color: #2a2831;
 }
 
-a {
+h1 {
+font-size: 300%;
+margin-bottom: 0;
+}
+
+h2 {
+line-height:1;
+margin: 0;
+}
+
+p {
+font-size: 120%;
+width: 80%;
+}
+
+li a {
 background-color:#ffdb43;
 color:white;
-padding: 10px 10px 10px 10px;
+padding: 20px 20px 20px 20px;
 text-decoration:none;
+font-size: 200%;
+margin: 50px 50px 50px 50px;
 }
 
 ul {
   position: fixed;
-    bottom: 0;
+    bottom: -8px;
     width: 100%;
     list-style-type: none;
     background-color: #1d1c21;
     padding: 20px 20px 20px 20px;
   }
 
-  li a {
-    margin: 0;
-  }
+.email {
+align-items: center;
+}
 
 
 
