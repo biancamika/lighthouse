@@ -14,9 +14,11 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script type="text/javascript">
-        function changeColor(color) {
-          document.body.style.background = color;
-        }
+        function toggle(){
+    $('body').toggleClass('style2');
+    $('ul').toggleClass('style2');
+      $('span').toggleClass('style2');
+     }
       </script>
     </head>
     <body>
@@ -29,20 +31,20 @@
             <img height="200px" width="200px" src="img/lighthouse.png"/>
             <h1> LIGHTHOUSE </h1>
             <h2> Don't be kept in the dark. </h2>
-            <p> In this current age of technology, secrets are now easier to keep. Even your loved ones aren't exceptions. With measures such as passwords and alerts, how will you ever know of such acts? <b> Lighthouse </b> is a security software that uncovers anything hidden in people's gadgets, from messages to private accounts. Nothing will stay hidden from you ever again. </p>
+            <p> In this current age of technology, secrets are now easier to keep. Even your loved ones aren't exceptions. With measures such as passwords and alerts, how will you ever know of such acts? <b> Lighthouse </b> is a security software that uncovers anything hidden in people's gadgets, from messages to private accounts. Nothing will stay hidden from you ever again. <span>What a stalker you are. </span> </p>
+            <h2> HOW DOES IT WORK? </h2>
+            <p> After connecting to gadgets of your choice, you can make use of these functions. </p>
 <div class="use">
-<h2> HOW DOES IT WORK? </h2>
-<p> After connecting to gadgets of your choice, you can make use of these functions. </p>
 <div class="uses">
 <img height="130px" width="130px" src="img/search.png"/>
 <h2> Find secrets. </h2>
 <p> When you turn on Enlighten, all that stays unseen is revealed on the screen.
-  This way, you don't have to go checking everything for changes. </p>
+  This way, <span> stalking is now easier, and </span>  you don't have to go checking everything for changes. </p>
 </div>
 <div class="uses">
 <img height="130px" width="130px" src="img/warning.png"/>
 <h2> Get alerts. </h2>
-<p> Be notified of any new changes, whether it's a new account or contact number. </p>
+<p> Be notified of any new changes, whether it's a new account or contact number. <span> Privacy no longer exists for your target. </span> </p>
 </div>
 <div class="uses">
 <img height="130px" width="130px" src="img/smartphone.png"/>
@@ -52,13 +54,13 @@
 </div>
 <div>
 <h2> HOW DO I START? </h2>
-<p> See the two buttons below ('Enlighten' and 'Darken')? They simulate the effect of the <b> Lighthouse </b> software on gadgets. Try testing them with the example below.</p>
+<p> See the button below ('Enlighten Me')? They simulate the effect of the <b> Lighthouse </b> software on gadgets. Try testing them with the example below.</p>
 </div>
         <div class="family">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
         </div>
         <div class="email">
-          <h1> Thank you for trying out our demo! </h1>
+          <h1> Thank you for trying out this <span> immoral </span> demo! </h1>
           <p>To get updated on future changes, sign up with your email below. </p>
           <form>
             <input type="text" name="email">
@@ -67,10 +69,11 @@
           <p> Made with blood, sweat and tears by Bianca Aguilar for mHacks </p>
         </div>
       </center>
+      <div class="space">
+      </div>
         <ul class="nav">
           <center>
-<li> <a href="#" onclick="changeColor('#ffffff')"> ENLIGHTEN </a>
-<a href="#" onclick="changeColor('#2a2831')"> DARKEN </a>
+<li> <button onclick="toggle()"> ENLIGHTEN ME </button>
 </li>
 </center>
         </ul>
