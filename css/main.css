@@ -100,17 +100,18 @@ body {
 }
 
 h1 {
-font-size: 300%;
+font-size: 350%;
 margin-bottom: 0;
 }
 
 h2 {
 line-height:1;
 margin: 0;
+font-size:250%;
 }
 
 p {
-font-size: 120%;
+font-size: 150%;
 width: 80%;
 }
 
@@ -123,7 +124,7 @@ font-size: 200%;
 margin: 50px 50px 50px 50px;
 }
 
-ul {
+.nav {
   position: fixed;
     bottom: -15px;
     width: 100%;
@@ -136,8 +137,25 @@ ul {
 align-items: center;
 }
 
+.uses img {
+padding: 10px 10px 10px 10px;
+}
 
+.uses p {
 
+}
+
+.uses {
+float:left;
+width: 20%;
+}
+.use {
+  display:inline-block;
+}
+
+center img {
+  margin-top: 20px;
+}
 
 
 
