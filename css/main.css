@@ -108,8 +108,9 @@ text-decoration:none;
 
 ul {
   position: fixed;
-    top: 0;
+    bottom: 0;
     width: 100%;
+    list-style-type: none;
   }
 
 
