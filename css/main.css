@@ -100,23 +100,30 @@ body {
 }
 
 body.style2 {
-  background-color:#ffffff;
+  background-color:#f3f3f3;
+}
+
+h1, h2 {
+font-family: 'Oswald', sans-serif;
 }
 
 h1 {
 font-size: 350%;
 margin-bottom: 0;
+font-weight:700;
 }
 
 h2 {
 line-height:1;
 margin: 0;
 font-size:250%;
+font-weight: 600;
 }
 
 p {
 font-size: 150%;
 width: 80%;
+font-family: 'Open Sans', sans-serif;
 }
 
 li button {
@@ -168,16 +175,12 @@ center img {
 }
 
 span {
-  font-weight:bold;
   font-style:italic;
  display:none;
 }
 
 span.style2 {
   display: inline;
- display:inline;
-  color:#ffffff;
-  background-color:#ffdb43;
 }
 
 .space {
@@ -187,8 +190,9 @@ span.style2 {
   width: 100%;
 }
 
-
-
+.prev {
+  position:fixed;
+}
 
 
 /* ==========================================================================
