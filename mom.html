@@ -20,14 +20,14 @@ $('ul').toggleClass('style2');
  $('span').toggleClass('style2');
   }
 
-  function change() {
-    var image = document.getElementById('dad');
-    if (image.src.match("bulbon")) {
-        image.src = "img/dad1.png";
-    } else {
-        image.src = "img/dad1light.png";
-    }
-}
+  function change1() {
+  var image = document.getElementById('mom').src;
+    if (image.indexOf('mom2.png')!=-1) {
+        document.getElementById('mom').src = 'img/mom2light.png';
+   } else {
+     document.getElementById('mom').src = "img/mom2.png";
+   }
+  }
 
       </script>
     </head>
@@ -39,11 +39,11 @@ $('ul').toggleClass('style2');
         <!-- Add your site or application content here -->
         <a href="index.html"><img class="prev" width="100px" height="100px" src="img/previous.png"></a>
         <center>
-        <img position="absolute" width="20%" height="20%" src="img/mom2.png">
+        <img id="mom" position="absolute" width="20%" height="20%" src="img/mom2.png">
       </center>
         <ul class="nav">
           <center>
-      <li> <button id="button" onclick="toggle();"> ENLIGHTEN ME </button>
+      <li> <button id="button" onclick="toggle();change1();"> ENLIGHTEN ME </button>
       </li>
       </center>
         </ul>

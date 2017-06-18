@@ -15,20 +15,40 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,600i|Oswald:600,700" rel="stylesheet">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script type="text/javascript">
-       function toggle(){
+         /*document.getElementbyTagName("button").addEventListener("click", toggle);
+document.addEventListener("click", someOtherFunction);*/
+function toggle(){
 $('body').toggleClass('style2');
 $('ul').toggleClass('style2');
  $('span').toggleClass('style2');
   }
 
   function change() {
-    var image = document.getElementById('dad');
-    if (image.src.match("bulbon")) {
-        image.src = "img/dad1.png";
-    } else {
-        image.src = "img/dad1light.png";
-    }
-}
+  var image = document.getElementById('dad').src;
+    if (image.indexOf('dad1.png')!=-1) {
+        document.getElementById('dad').src = 'img/dad1light.png';
+   } else {
+     document.getElementById('dad').src = "img/dad1.png";
+   }
+  }
+
+  function change1() {
+  var image = document.getElementById('mom').src;
+    if (image.indexOf('mom1.png')!=-1) {
+        document.getElementById('mom').src = 'img/mom1light.png';
+   } else {
+     document.getElementById('mom').src = "img/mom1.png";
+   }
+  }
+
+  function change2() {
+  var image = document.getElementById('kid').src;
+    if (image.indexOf('kid1.png')!=-1) {
+        document.getElementById('kid').src = 'img/kid1light.png';
+   } else {
+     document.getElementById('kid').src = "img/kid1.png";
+   }
+  }
 
       </script>
     </head>
@@ -65,12 +85,12 @@ $('ul').toggleClass('style2');
 </div>
 <div>
 <h2> HOW DO I START? </h2>
-<p> See the button below ('Enlighten Me')? It simulates the <span>invasive</span> effect of the <b> Lighthouse </b> software on gadgets. Try testing them with the example family below.</p>
+<p> See the button below ('Enlighten Me')? It simulates the <span>invasive</span> effect of the <b> Lighthouse </b> software on gadgets. Try testing them with the example family below. To go into further detail<span> for stalking</span>, click a phone.</p>
 </div>
         <div class="family">
           <a href="dad.html"><img id="dad" height="15%" width="15%" src="img/dad1.png"/></a>
-          <a href="mom.html"><img height="15%" width="15%" src="img/mom1.png"/></a>
-            <a href="kid.html"><img height="15%" width="15%" src="img/kid1.png"/></a>
+          <a href="mom.html"><img id="mom" height="15%" width="15%" src="img/mom1.png"/></a>
+            <a href="kid.html"><img id="kid" height="15%" width="15%" src="img/kid1.png"/></a>
         </div>
         <div class="email">
           <h1> Thank you for trying out this <span> immoral </span> demo! </h1>
@@ -86,7 +106,7 @@ $('ul').toggleClass('style2');
       </div>
         <ul class="nav">
           <center>
-<li> <button id="button" onclick="toggle();"> ENLIGHTEN ME </button>
+<li> <button onclick="toggle();change();change1();change2();" id="button"> ENLIGHTEN ME </button>
 </li>
 </center>
         </ul>
